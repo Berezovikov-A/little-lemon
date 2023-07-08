@@ -1,0 +1,17 @@
+.navbar {
+    grid-column: 5 / span 6;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--primary-1);
+    text-decoration: none;
+    font: var(--card-title);
+}

@@ -1,16 +1,16 @@
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import Home from './pages/Home';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Header>
-          <Nav></Nav>
+        <Nav></Nav>
       </Header>
-      <Main>Hello World!</Main>
+      <Home />
       <Footer></Footer>
     </>
   );

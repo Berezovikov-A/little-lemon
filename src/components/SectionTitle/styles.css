@@ -1,0 +1,19 @@
+.section-title {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    margin: 0;
+    font: var(--display-title);
+    color: var(--primary-2);
+}
+
+.subtitle {
+    margin: 0;
+    margin-top: -20px;
+    font: var(--subtitle);
+    color: var(--highlight-1);
+}

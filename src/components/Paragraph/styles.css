@@ -1,0 +1,5 @@
+.paragraph {
+    position: relative;
+    font: var(--paragraph-text);
+    color: var(--highlight-1);
+}

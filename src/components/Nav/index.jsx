@@ -1,9 +1,12 @@
+import './styles.css';
+
 export default function Nav() {
+
     const navLinks = [
         {
             key: 0,
             display: "Home",
-            href: "/home",
+            href: "/",
         },
         {
             key: 1,
@@ -33,12 +36,12 @@ export default function Nav() {
     ];
 
     return (
-        <nav>
-            <ul>
+        <nav className="navbar">
+            <ul className="nav-links">
                 {navLinks.map(
-                    ({key, display, href}) => <li key={key}><a href={href}>{display}</a></li>
+                    ({key, display, href}) => <li key={key}><a href={href} className="nav-link">{display}</a></li>
                 )}
             </ul>
         </nav>
-    )
+    );
 }

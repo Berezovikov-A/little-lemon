@@ -1,0 +1,11 @@
+.section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    column-gap: 20px;
+    height: 400px;
+    color: var(--primary-2);
+}
