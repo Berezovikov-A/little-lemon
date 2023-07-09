@@ -6,7 +6,6 @@
 }
 
 .image {
-    border-radius: 16px;
     object-fit: cover;
     margin: 0;
 }

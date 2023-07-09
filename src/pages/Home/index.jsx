@@ -7,31 +7,41 @@ import Button from "../../components/Button";
 import Image from "../../components/Image";
 import CardContainer from "../../components/CardContainer";
 import MenuCard from "../../components/MenuCard";
+import TestimonialsCard from "../../components/TestimonialsCard";
 import restaurantfood from "../../assets/restauranfood.jpg";
 import menuItems from "../../assets/menu-items/data.json";
+import testimonials from "../../assets/testimonials/data.json";
 
 export default function Home() {
     return (
     <Main>
-        <Section height="350px" backgroundColor="var(--primary-1)">
-          <Article style={{gridColumn: "3 / span 3"}}>
-            <SectionTitle subtitle="Chicago">Little Lemon</SectionTitle>
+        <Section dark>
+          <SectionTitle subtitle="Chicago">Little Lemon</SectionTitle>
+          <Article style={{gridColumn: "3 / span 3", gridRow: "2"}}>
             <Paragraph>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</Paragraph>
           </Article>
-          <Button href="/reservations" value="Reserve a table" style={{gridColumn: "3 / span 3", gridRow: "2"}} />
-          <Image src={restaurantfood} alt="Restaurant Food" height="424px" style={{gridColumn: "7 / span 4"}} />
+          <Button href="/reservations" value="Reserve a table" style={{gridColumn: "3 / span 3", gridRow: "3"}} />
+          <Image src={restaurantfood} alt="Restaurant Food" height="350px" style={{gridColumn: "7 / span 4", gridRow: "1 / span 3"}} />
         </Section>
-        <div style={{height: "120px"}}></div>
         <Section height="fit-content">
-          <SectionTitle dark style={{gridColumn: "3 / span 5"}}>This weeks' specials</SectionTitle>
+          <SectionTitle dark>Weekly specials</SectionTitle>
           <Button href="/menu" value="Go to menu" style={{gridColumn: "8 / span 3"}} />
-          <CardContainer style={{gridColumn: "3 / span 8", gridRow: "2"}}>
+          <CardContainer>
             {menuItems.map(({id, title, description, price, img}) =>
-              <MenuCard img={img} name={title} price={price} style={{gridColumn: "3 / span 3", gridRow: "2"}} key={id}>
+              <MenuCard img={img} name={title} price={price} key={id}>
                 {description}
               </MenuCard>
             )}
-
+          </CardContainer>
+        </Section>
+        <Section dark>
+          <SectionTitle>Testimonials</SectionTitle>
+          <CardContainer>
+            {testimonials.map(({id, name, img, rating, review}) =>
+              <TestimonialsCard img={img} name={name} rating={rating} key={id}>
+                {review}
+              </TestimonialsCard>
+            )}
           </CardContainer>
         </Section>
       </Main>

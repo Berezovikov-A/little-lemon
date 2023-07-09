@@ -1,4 +1,6 @@
+import Card from "../Card";
 import Image from "../Image";
+import CardTitle from "../CardTitle";
 import Article from "../Article";
 import Paragraph from "../Paragraph";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,19 +9,19 @@ import "./styles.css";
 
 export default function MenuCard({ img, name, price, children, ...props}) {
     return (
-        <div aria-label="card" className="menu-card" {...props}>
+        <Card height="480px" width="270px" {...props}>
             <Image src={(() => require(`../../assets/menu-items/${img}`))()} alt={name} height="270px" />
-            <Article>
-                <header className="card-header">
-                    <h3 className="card-title">{name}</h3>
-                    <h3 className="card-title price">$ {price}</h3>
+            <Article style={{height: "206px"}}>
+                <header className="menu-header">
+                    <CardTitle>{name}</CardTitle>
+                    <CardTitle style={{color: "var(--secondary-1)"}}>$ {price}</CardTitle>
                 </header>
                 <Paragraph dark>{children}</Paragraph>
+                <footer className="card-footer">
+                    <CardTitle>Order delivery</CardTitle>
+                    <FontAwesomeIcon icon={faMotorcycle} />
+                </footer>
             </Article>
-            <footer className="card-footer">
-                <h3 className="card-title">Order delivery</h3>
-                <FontAwesomeIcon icon={faMotorcycle} />
-            </footer>
-        </div>
+        </Card>
     )
 }

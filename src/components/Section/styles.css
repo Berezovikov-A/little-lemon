@@ -1,6 +1,7 @@
 .section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    align-items: center;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 24px;

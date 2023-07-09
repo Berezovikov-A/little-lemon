@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export default function Image({ src, alt, width = "100%", height = "100%", ...props}) {
+export default function Image({ src, alt, width = "100%", height = "100%", avatar, ...props}) {
     return (
         <div className="frame"  {...props}>
             <img
@@ -9,6 +9,7 @@ export default function Image({ src, alt, width = "100%", height = "100%", ...pr
                 alt={alt}
                 width={width}
                 height={height}
+                style={{borderRadius: avatar ? height : "16px"}}
             />
         </div>
     );

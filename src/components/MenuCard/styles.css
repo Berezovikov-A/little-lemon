@@ -1,35 +1,16 @@
-.menu-card {
-    display: flex;
-    flex-direction: column;
-    height: 480px;
-    width: 270px;
-    border-radius: 16px;
-    background-color: var(--highlight-1);
-}
-
-.card-header {
+.menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
 }
 
-.card-title {
-    margin: 0;
-    font: var(--card-title);
-    color: var(--primary-1);
-}
-
-.price {
-    color: var(--secondary-1);
-}
-
 .card-footer {
+    justify-self: flex-end;
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     margin-top: auto;
-    padding: 10px;
     color: var(--primary-1);
 }

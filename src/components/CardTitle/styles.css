@@ -1,0 +1,5 @@
+.card-title {
+    margin: 0;
+    font: var(--card-title);
+    color: var(--primary-1);
+}

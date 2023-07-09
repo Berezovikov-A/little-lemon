@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "name": "Jessica",
+        "img": "jessica.jpeg",
+        "rating": 5,
+        "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 1,
+        "name": "Josh",
+        "img": "josh.jpeg",
+        "rating": 5,
+        "review": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 3,
+        "name": "Robert",
+        "img": "robert.jpeg",
+        "rating": 3,
+        "review": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 4,
+        "name": "Tina",
+        "img": "tina.jpeg",
+        "rating": 4,
+        "review": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+]
