@@ -9,6 +9,5 @@ export default function Paragraph({dark, children, ...props}) {
         >
             {children}
          </p>
-
-    )
+    );
 }

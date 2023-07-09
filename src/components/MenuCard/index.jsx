@@ -23,5 +23,5 @@ export default function MenuCard({ img, name, price, children, ...props}) {
                 </footer>
             </Article>
         </Card>
-    )
+    );
 }

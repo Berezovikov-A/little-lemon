@@ -1,0 +1,51 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    column-gap: 20px;
+    height: fit-content;
+    color: var(--primary-2);
+    background-color: var(--primary-1);
+}
+
+.footer-logo {
+    width: 100%;
+    grid-column: 3 / span 2;
+}
+
+.doormat-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    grid-column: 5 / span 5;
+    height: 340px;
+}
+
+.doormat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    color: var(--highlight-1);
+}
+
+.icons {
+    flex-direction: row;
+}
+
+.doormat-title {
+    font: var(--card-title);
+}
+
+.doormat-link {
+    font: var(--lead-text);
+    color: inherit;
+    text-decoration: none;
+}

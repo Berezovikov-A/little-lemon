@@ -5,5 +5,5 @@ export default function CardContainer({children, ...props}) {
         <div aria-label="card-container" className="card-container" {...props}>
             {children}
         </div>
-    )
+    );
 }

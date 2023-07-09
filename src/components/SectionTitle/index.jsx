@@ -16,6 +16,5 @@ export default function SectionTitle({subtitle, dark, children, ...props}) {
                 {subtitle}
             </h2>}
         </header>
-
-    )
+    );
 }

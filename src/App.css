@@ -13,6 +13,7 @@
   --paragraph-text: normal normal 400 16px 'Karla', sans-serif;
   --section-title: normal normal 800 20px 'Karla', sans-serif;
   --highlight-text: normal normal 500 16px 'Karla', sans-serif;
+  --lead-text: normal normal 500 18px 'Karla', sans-serif;
 }
 
 * {
