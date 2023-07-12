@@ -1,6 +1,6 @@
 .frame {
     overflow: hidden;
-    height: 100%;
+    height: fit-content;
     padding: 0;
     margin: 0;
 }

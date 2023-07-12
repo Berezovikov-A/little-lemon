@@ -1,10 +1,10 @@
 import navLinks from "../navigation.json";
 import './styles.css';
 
-export default function Nav() {
+export default function Nav({ ...props }) {
 
     return (
-        <nav className="navbar">
+        <nav className="navbar" {...props}>
             <ul className="nav-links">
                 {navLinks.map(
                     ({key, display, href}) =>

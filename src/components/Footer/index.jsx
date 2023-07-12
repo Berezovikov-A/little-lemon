@@ -1,7 +1,7 @@
 import navLinks from "../navigation.json";
 import logoVerticalWhite from "../../assets/logo-vertical-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import "./styles.css";
 
 export default function Footer() {
@@ -30,6 +30,11 @@ export default function Footer() {
             key: 1,
             icon: faInstagram,
             href: "https://www.instagram.com/",
+        },
+        {
+            key: 2,
+            icon: faTwitter,
+            href: "https://twitter.com/",
         },
     ];
 
