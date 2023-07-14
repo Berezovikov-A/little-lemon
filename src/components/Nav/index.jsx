@@ -8,7 +8,7 @@ export default function Nav({ ...props }) {
             <ul className="nav-links">
                 {navLinks.map(
                     ({key, display, href}) =>
-                        <li key={key}><a href={href} className="nav-link">{display}</a></li>
+                        <li key={key}><a href={href} className="nav-link" data-testid={display}>{display}</a></li>
                     )}
             </ul>
         </nav>

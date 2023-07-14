@@ -1,14 +1,14 @@
 import './App.css';
 import Header from './components/Header';
-import Home from './pages/Home';
+import Reservations from './pages/Reservations';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
-      <Footer></Footer>
+      <Reservations />
+      <Footer />
     </>
   );
 }

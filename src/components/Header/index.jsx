@@ -10,7 +10,6 @@ export default function Header() {
     const [menu, setMenu] = useState(true);
 
     useEffect(() => {
-        console.log(mobile);
         const resolution = window.matchMedia("(max-width: 768px)");
         const changeHandler = (event) => {
             if (event.matches) {

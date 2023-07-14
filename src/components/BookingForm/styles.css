@@ -1,0 +1,38 @@
+.form {
+    grid-area: 2 / 3 / span 1 / span 5;
+}
+
+.label {
+    font: var(--card-title);
+}
+
+.field {
+    display: block;
+    margin: 10px 0;
+    padding: 13px 10px;
+    border-radius: 8px;
+    width: 100%;
+    font: var(--paragraph-text);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-2);
+    font: var(--section-title);
+    color: var(--highlight-2);
+    text-transform: uppercase;
+    height: 48px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.submit:hover {
+    background-color: var(--secondary-1);
+}
+
+.submit:active {
+    background-color: var(--primary-1);
+    color: var(--highlight-1);
+}
