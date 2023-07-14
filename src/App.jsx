@@ -1,13 +1,16 @@
 import './App.css';
 import Header from './components/Header';
-import Reservations from './pages/Reservations';
 import Footer from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
+import PageRouter from './PageRouter';
 
 function App() {
   return (
     <>
       <Header />
-      <Reservations />
+      <BrowserRouter>
+        <PageRouter />
+      </BrowserRouter>
       <Footer />
     </>
   );

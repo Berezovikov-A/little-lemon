@@ -7,12 +7,12 @@
     {
         "key": 1,
         "display": "About",
-        "href": "/about"
+        "href": "/under-construction"
     },
     {
         "key": 2,
         "display": "Menu",
-        "href": "/menu"
+        "href": "/under-construction"
     },
     {
         "key": 3,
@@ -22,11 +22,11 @@
     {
         "key": 4,
         "display": "Order Online",
-        "href": "/order-online"
+        "href": "/under-construction"
     },
     {
         "key": 5,
         "display": "Log In",
-        "href": "/log-in"
+        "href": "/under-construction"
     }
 ]
