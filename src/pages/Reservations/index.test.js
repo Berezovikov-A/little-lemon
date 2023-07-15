@@ -2,6 +2,10 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import Reservations from '.';
 import { BrowserRouter } from 'react-router-dom';
 
+const today = new Date();
+const todayDate = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
+
 describe("Booking form", () => {
     test("renders labels", () => {
         render(
@@ -44,7 +48,7 @@ describe("Booking form", () => {
             </BrowserRouter>
         );
 
-        fireEvent.change(screen.getByTestId("date"), {target: `2023-08-15`});
+        fireEvent.change(screen.getByTestId("date"), { target: { value: todayDate } });
         const options = screen.getAllByTestId("time-option");
         expect(options.length).toBeGreaterThan(0);
     })

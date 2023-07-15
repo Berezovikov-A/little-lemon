@@ -1,4 +1,4 @@
-const seededRandom = seed => {
+const seededRandom = (seed) => {
   const m = 2 ** 35 - 31;
   const a = 185852;
   let s = seed % m;
@@ -6,7 +6,7 @@ const seededRandom = seed => {
   return () => (s = s * a % m) / m;
 };
 
-export const fetchAPI = date => {
+export const fetchAPI = (date) => {
   let result = [];
   let random = seededRandom(date.getDate());
 
@@ -22,5 +22,6 @@ const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const APIsubmit = async (formData) => {
   await wait(2000);
+  console.log(formData);
   return true;
 };

@@ -25,16 +25,19 @@ export default function Footer() {
             key: 0,
             icon: faFacebook,
             href: "https://www.facebook.com/",
+            label: "Go to Facebook",
         },
         {
             key: 1,
             icon: faInstagram,
             href: "https://www.instagram.com/",
+            label: "Go to Instagram",
         },
         {
             key: 2,
             icon: faTwitter,
             href: "https://twitter.com/",
+            label: "Go to Twitter",
         },
     ];
 
@@ -61,8 +64,8 @@ export default function Footer() {
                 <div className="doormat-section">
                     <h3 className="doormat-title">Social media</h3>
                     <ul className="doormat-list icons">
-                        {socialMedia.map(({key, icon, href}) =>
-                            <li key={key}><a className="doormat-link" href={href} target="_blank" rel="noreferrer">
+                        {socialMedia.map(({key, icon, href, label}) =>
+                            <li key={key}><a className="doormat-link" href={href} target="_blank" rel="noreferrer" aria-label={label}>
                                 <FontAwesomeIcon icon={icon} size="2xl" />
                             </a></li>
                         )}
