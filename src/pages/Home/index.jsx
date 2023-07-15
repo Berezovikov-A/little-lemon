@@ -27,7 +27,7 @@ export default function Home() {
         </Section>
         <Section height="fit-content">
           <SectionTitle dark>Weekly specials</SectionTitle>
-          <Button href="/menu" value="Go to menu" className="button specials-button" />
+          <Button href="/under-construction" value="Go to menu" className="button specials-button" />
           <CardContainer>
             {menuItems.map(({id, title, description, price, img}) =>
               <MenuCard img={img} name={title} price={price} key={id}>

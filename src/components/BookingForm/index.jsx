@@ -1,7 +1,7 @@
 import { Formik, Form, Field } from "formik";
 import "./styles.css";
 
-export default function BookingForm({ availableTimes, reducer }) {
+export default function BookingForm({ availableTimes, reducer, onSubmit }) {
 
     return (
         <Formik
@@ -11,11 +11,8 @@ export default function BookingForm({ availableTimes, reducer }) {
                 guests: 1,
                 occasion: "",
             }}
-            onSubmit={(values, actions) => {
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                    actions.setSubmitting(false);
-                }, 1000);
+            onSubmit={async (values) => {
+                await onSubmit(values);
             }}
         >
             {(props) => (
@@ -34,7 +31,7 @@ export default function BookingForm({ availableTimes, reducer }) {
                         <option value="birthday">Birthday</option>
                         <option value="anniversary">Anniversary</option>
                     </Field>
-                    <button type="submit" className="submit">Make your reservation</button>
+                    <button type="submit" className="submit" disabled={props.isSubmitting}>Make your reservation</button>
                 </Form>
             )}
         </Formik>

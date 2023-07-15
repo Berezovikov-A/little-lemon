@@ -1,5 +1,5 @@
 .form {
-    grid-area: 2 / 3 / span 1 / span 5;
+    grid-area: 2 / 3 / span 1 / span 3;
 }
 
 .label {
@@ -23,6 +23,7 @@
     font: var(--section-title);
     color: var(--highlight-2);
     text-transform: uppercase;
+    width: 100%;
     height: 48px;
     border-radius: 8px;
     margin: 10px 0;
@@ -35,4 +36,33 @@
 .submit:active {
     background-color: var(--primary-1);
     color: var(--highlight-1);
+}
+
+.submit:disabled {
+    color: var(--highlight-2);
+    background-color: var(--highlight-1);
+}
+
+@media only screen and (max-width: 1124px) {
+    .form {
+        grid-area: 2 / 2 / span 1 / span 4;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .form {
+        grid-area: 2 / 1 / span 1 / span 5;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        grid-area: 2 / span 6 / span 1 / 7;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        grid-area: 3 / 1 / span 1 / span 12;
+    }
 }

@@ -1,0 +1,29 @@
+.button-back {
+    grid-column: span 3 / 6;
+}
+
+@media only screen and (max-width: 1124px) {
+    .button-back {
+        grid-column: span 4 / 6;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .button-back {
+        grid-column: span 5 / 6;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button-back {
+        grid-column: span 5 / 6;
+        grid-row: 3;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button-back {
+        grid-column: 1 / 12;
+        grid-row: 4;
+    }
+}

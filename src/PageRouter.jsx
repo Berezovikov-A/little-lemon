@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Reservations from "./pages/Reservations";
 import UnderConstruction from "./pages/UnderConstruction";
+import ConfirmedBooking from "./pages/ConfirmedBooking";
 
 export default function PageRouter() {
 
@@ -20,7 +21,12 @@ export default function PageRouter() {
             path: "/under-construction",
             key: "under-construction",
             element: <UnderConstruction />,
-        }
+        },
+        {
+            path: "/confirmed-booking",
+            key: "confirmed-booking",
+            element: <ConfirmedBooking />,
+        },
     ];
 
     return (
