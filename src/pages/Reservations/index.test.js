@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import Reservations from '.';
 import { BrowserRouter } from 'react-router-dom';
+import { act } from 'react-dom/test-utils';
 
 const today = new Date();
 const todayDate = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
@@ -41,14 +42,17 @@ describe("Booking form", () => {
         expect(options.length).toBeGreaterThan(0);
     });
 
-    test("select has options after date update", () => {
+    test("select has options after date update", async () => {
         render(
             <BrowserRouter>
                 <Reservations />
             </BrowserRouter>
         );
 
-        fireEvent.change(screen.getByTestId("date"), { target: { value: todayDate } });
+        await act(() => {
+            fireEvent.change(screen.getByTestId("date"), { target: { value: todayDate } });
+        });
+
         const options = screen.getAllByTestId("time-option");
         expect(options.length).toBeGreaterThan(0);
     })
